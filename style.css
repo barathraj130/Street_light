@@ -921,6 +921,67 @@ h1, h2, h3, .logo-text {
     line-height: 1.4;
 }
 
+/* Achievements */
+.achievements-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.milestone-card {
+    display: flex;
+    gap: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    padding: 2.5rem;
+    border-radius: 24px;
+    margin-top: 2rem;
+    backdrop-filter: blur(20px);
+}
+
+.milestone-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 242, 255, 0.1);
+    color: var(--primary);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.milestone-text h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.milestone-text p {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.visual-frame {
+    border: 1px solid var(--glass-border);
+    padding: 1rem;
+    border-radius: 24px;
+    background: var(--glass);
+    overflow: hidden;
+}
+
+.visual-frame img {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+    transition: var(--transition);
+}
+
+.visual-frame:hover img {
+    transform: scale(1.02);
+}
+
 /* Animations */
 @keyframes pulse-glow {
     from { opacity: 0.3; transform: scale(1); }

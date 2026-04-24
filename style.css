@@ -963,12 +963,27 @@ h1, h2, h3, .logo-text {
     font-size: 1rem;
 }
 
+.visual-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .visual-frame {
     border: 1px solid var(--glass-border);
     padding: 1rem;
     border-radius: 24px;
     background: var(--glass);
     overflow: hidden;
+}
+
+.small-frame {
+    width: 80%;
+    align-self: flex-end;
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
 .visual-frame img {

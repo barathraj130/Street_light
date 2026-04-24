@@ -3,420 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart LoRa Street Light System | Future of Smart City Infrastructure</title>
-    <meta name="description" content="Energy-efficient, IoT-enabled street lights with real-time monitoring. LoRa-based smart street lighting solution for municipalities and smart cities.">
-    <link rel="stylesheet" href="style.css">
+    <title>Fluxora Technology | Future of Smart Street Lighting</title>
+    <meta name="description" content="Fluxora Technology: Next-gen AI-powered LoRa street lighting. AICTE Hackathon Finalist. Top-tier IoT infrastructure.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <!-- Navigation -->
+
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo">
-                <span class="logo-icon"></span>
-                <span class="logo-text">FLUXORA<span>TECH</span></span>
+                <div class="logo-icon"></div>
+                <div class="logo-text">FLUXORA<span>TECH</span></div>
             </a>
-            <div class="nav-links" id="navLinks">
-                <a href="#about">About</a>
-                <a href="#features">Features</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#dashboard">Dashboard</a>
+            <div class="nav-links">
+                <a href="#about">Innovation</a>
+                <a href="#how">Tech</a>
+                <a href="#success">Milestones</a>
+                <a href="#dashboard">Live Data</a>
                 <a href="#contact" class="btn btn-primary">Request Demo</a>
             </div>
-            <button class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-glow"></div>
-        <div class="container">
-            <div class="hero-content reveal">
-                <span class="badge">Next-Gen IoT Solution</span>
-                <h1>Smart Street Lighting <br><span class="gradient-text">for the Future</span></h1>
-                <p>Fully automated, sensor-driven street lights with real-time monitoring. No manual switching needed — our system adapts to the environment instantly.</p>
-                <div class="hero-btns">
-                    <a href="#contact" class="btn btn-primary">Request Demo</a>
-                    <a href="#about" class="btn btn-outline">Learn More</a>
-                </div>
-            </div>
-            <div class="hero-visual reveal delay-1">
-                <div class="visual-card">
-                    <div id="heroImage">
-                        <span class="img-badge">Prototype v1.0</span>
+    <main>
+        <section class="hero">
+            <div class="hero-glow-1"></div>
+            <div class="container">
+                <div class="hero-content reveal">
+                    <span class="subtitle">Next-Gen IoT Ecosystem</span>
+                    <h1>Smart Cities <br><span class="gradient-text">Redefined.</span></h1>
+                    <p>Revolutionizing urban infrastructure with AI-driven, LoRa-powered street lighting systems that cut energy waste by up to 80%.</p>
+                    <div class="hero-btns">
+                        <a href="#about" class="btn btn-primary">Explore Tech <i data-lucide="arrow-right"></i></a>
+                        <a href="#success" class="btn btn-outline">Our Milestones</a>
                     </div>
-                    <div class="glowing-orb"></div>
+                </div>
+                <div class="hero-visual reveal delay-1">
+                    <div class="visual-card">
+                        <div id="heroImage"></div>
+                        <div class="img-badge">Prototype v1.0</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section class="about section-padding" id="about">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="subtitle">System Overview</span>
-                <h2>Intelligent Infrastructure</h2>
-                <p>Developed and tested by <strong>Fluxora Technology</strong> in Tiruppur, Tamil Nadu. Our system leverages STM32-based intelligence and long-range connectivity to create a responsive, energy-saving lighting network.</p>
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="subtitle">The Innovation</span>
+                    <h2>Intelligent Infrastructure</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card reveal">
+                        <div class="icon-box"><i data-lucide="radio"></i></div>
+                        <h3>LoRa Connectivity</h3>
+                        <p>Ultra-long range communication (5km+) with minimal power consumption, perfect for city-wide mesh networks.</p>
+                    </div>
+                    <div class="about-card reveal delay-1">
+                        <div class="icon-box"><i data-lucide="zap"></i></div>
+                        <h3>Adaptive Dimming</h3>
+                        <p>Real-time motion sensing and lux-based adjustment ensure light is only where it's needed, when it's needed.</p>
+                    </div>
+                    <div class="about-card reveal delay-2">
+                        <div class="icon-box"><i data-lucide="activity"></i></div>
+                        <h3>Fault Detection</h3>
+                        <p>Instant alerts for malfunctioning lights or power issues, reducing maintenance costs and downtime.</p>
+                    </div>
+                </div>
             </div>
-            <div class="about-grid">
-                <div class="about-card reveal delay-1">
-                    <div class="icon-box"><i data-lucide="zap"></i></div>
-                    <h3>Motion Intelligence</h3>
-                    <p>Ultrasonic sensors detect movement, automatically dimming or brightening lights based on real-time traffic.</p>
-                </div>
-                <div class="about-card reveal delay-2">
-                    <div class="icon-box"><i data-lucide="radio"></i></div>
-                    <h3>LoRa Connectivity</h3>
-                    <p>Long-range, low-power communication ensures seamless data transfer across entire city districts.</p>
-                </div>
-                <div class="about-card reveal delay-3">
-                    <div class="icon-box"><i data-lucide="sun"></i></div>
-                    <h3>BH1750 Lux Sensor</h3>
-                    <p>Precise light intensity detection ensures lights only activate when natural light falls below required levels.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Technical Hardware -->
-    <section class="hardware section-padding bg-alt">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="subtitle">Hardware Stack</span>
-                <h2>Core Components</h2>
-                <p>Built on industrial-grade hardware for maximum reliability and performance.</p>
+        <section id="success" class="section-padding">
+            <div class="container">
+                <div class="achievements-wrapper">
+                    <div class="achievement-content reveal">
+                        <span class="subtitle">Our Success</span>
+                        <h2>National <br>Excellence</h2>
+                        <div class="milestone-card">
+                            <div class="milestone-icon"><i data-lucide="award"></i></div>
+                            <div class="milestone-text">
+                                <h3>AICTE Hackathon</h3>
+                                <p>Ranked in the <strong>Top 20 Nationally</strong> out of 2000+ elite competitors in the AICTE Innovators Hackathon.</p>
+                            </div>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-icon"><i data-lucide="trophy"></i></div>
+                            <div class="milestone-text">
+                                <h3>GITAM University</h3>
+                                <p>Selected as a <strong>National Finalist</strong> in the Global Challenges Competition for Smart City Innovation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-visual reveal delay-1">
+                        <div class="visual-stack">
+                            <div class="visual-frame main-frame">
+                                <img src="assets/hackathon.jpg" alt="National Hackathon Showcase">
+                            </div>
+                            <div class="visual-frame small-frame">
+                                <img src="assets/gitam.jpg" alt="Team GITAM University">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="hardware-grid">
-                <div class="hw-item reveal">
-                    <i data-lucide="cpu"></i>
-                    <h4>STM32 Controller</h4>
-                    <span>Central processing unit for real-time edge computing.</span>
-                </div>
-                <div class="hw-item reveal delay-1">
-                    <i data-lucide="radio-tower"></i>
-                    <h4>LoRa Module</h4>
-                    <span>Long-range RF communication for city-scale deployment.</span>
-                </div>
-                <div class="hw-item reveal delay-2">
-                    <i data-lucide="radar"></i>
-                    <h4>Ultrasonic Sensor</h4>
-                    <span>Detects movement for automatic brightness adjustment.</span>
-                </div>
-                <div class="hw-item reveal delay-3">
-                    <i data-lucide="monitor"></i>
-                    <h4>I²C LCD Display</h4>
-                    <span>Local monitoring of system status and sensor readings.</span>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Key Features -->
-    <section class="features section-padding" id="features">
-        <div class="container">
-            <div class="features-wrapper">
-                <div class="features-content reveal">
-                    <span class="subtitle">Why Choose Us</span>
-                    <h2>Key Features & Benefits</h2>
-                    <ul class="feature-list">
-                        <li>
-                            <i data-lucide="check-circle" class="text-green"></i>
-                            <span><strong>Energy Saving:</strong> Reduce power consumption by 60–80%.</span>
-                        </li>
-                        <li>
-                            <i data-lucide="check-circle" class="text-green"></i>
-                            <span><strong>Remote Monitoring:</strong> Full control via a central cloud dashboard.</span>
-                        </li>
-                        <li>
-                            <i data-lucide="check-circle" class="text-green"></i>
-                            <span><strong>Scalable Architecture:</strong> Designed to grow with your smart city.</span>
-                        </li>
-                        <li>
-                            <i data-lucide="check-circle" class="text-green"></i>
-                            <span><strong>Autonomous Operation:</strong> Automatic on/off and dimming based on ambient conditions.</span>
-                        </li>
-                    </ul>
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="subtitle">Applications</span>
+                    <h2>Versatile Solutions</h2>
                 </div>
-                <div class="features-visual reveal delay-2">
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <span class="stat-number">80%</span>
+                <div class="use-case-grid">
+                    <div class="use-case-item reveal">
+                        <div class="use-case-img" id="usecase1"></div>
+                        <div class="use-case-overlay"><h3>Highways</h3></div>
+                    </div>
+                    <div class="use-case-item reveal delay-1">
+                        <div class="use-case-img" id="usecase2"></div>
+                        <div class="use-case-overlay"><h3>Smart Cities</h3></div>
+                    </div>
+                    <div class="use-case-item reveal delay-2">
+                        <div class="use-case-img" id="usecase3"></div>
+                        <div class="use-case-overlay"><h3>Campuses</h3></div>
+                    </div>
+                    <div class="use-case-item reveal delay-3">
+                        <div class="use-case-img" id="usecase4"></div>
+                        <div class="use-case-overlay"><h3>Industrial</h3></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="section-padding">
+            <div class="container">
+                <div class="dashboard-mockup reveal">
+                    <div class="mockup-header">
+                        <div class="stat-item">
                             <span class="stat-label">Energy Saved</span>
+                            <span class="stat-val" id="energyStat">78.4%</span>
                         </div>
-                        <div class="stat-card">
-                            <span class="stat-number">10km</span>
-                            <span class="stat-label">LoRa Range</span>
+                        <div class="stat-item">
+                            <span class="stat-label">Active Nodes</span>
+                            <span class="stat-val" id="nodeStat">1,248</span>
                         </div>
-                        <div class="stat-card">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Monitoring</span>
+                        <div class="stat-item">
+                            <span class="stat-label">Network Range</span>
+                            <span class="stat-val">5.2 KM</span>
                         </div>
                     </div>
+                    <div id="chartImage"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- How It Works -->
-    <section class="workflow section-padding" id="how-it-works">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="subtitle">The Process</span>
-                <h2>How It Works</h2>
-            </div>
-            <div class="flow-steps">
-                <div class="step reveal">
-                    <div class="step-num">01</div>
-                    <div class="step-content">
-                        <h3>Detection</h3>
-                        <p>Sensors detect pedestrian or vehicular movement in the vicinity.</p>
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <span class="subtitle">Get in Touch</span>
+                        <h2>Ready to <br>Collaborate?</h2>
+                        <p>Partner with Fluxora Technology to build the infrastructure of tomorrow.</p>
+                        <div class="contact-details">
+                            <p><strong>Mobile:</strong> +91 81482 32205</p>
+                            <p><strong>Email:</strong> contact@mubgm.in</p>
+                            <p><strong>Headquarters:</strong> Tiruppur, TN, India</p>
+                        </div>
                     </div>
-                </div>
-                <div class="step-arrow reveal"></div>
-                <div class="step reveal delay-1">
-                    <div class="step-num">02</div>
-                    <div class="step-content">
-                        <h3>Activation</h3>
-                        <p>Light intensity increases instantly to ensure maximum safety.</p>
-                    </div>
-                </div>
-                <div class="step-arrow reveal"></div>
-                <div class="step reveal delay-2">
-                    <div class="step-num">03</div>
-                    <div class="step-content">
-                        <h3>Transmission</h3>
-                        <p>Usage data and health status sent to gateway via LoRa.</p>
-                    </div>
-                </div>
-                <div class="step-arrow reveal"></div>
-                <div class="step reveal delay-3">
-                    <div class="step-num">04</div>
-                    <div class="step-content">
-                        <h3>Control</h3>
-                        <p>Central system logs data and alerts maintenance if needed.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Dashboard Preview -->
-    <section class="dashboard section-padding" id="dashboard">
-        <div class="container">
-            <div class="dashboard-container reveal">
-                <div class="dashboard-header">
-                    <h3>Live Network Overview</h3>
-                    <div class="status-indicator">
-                        <span class="pulse"></span> System Active
-                    </div>
-                </div>
-                <div class="dashboard-mock">
-                    <div class="sidebar"></div>
-                    <div class="main-content">
-                        <div class="widgets">
-                            <div class="widget">
-                                <span class="widget-label">Active Units</span>
-                                <span class="widget-value">1,248</span>
+                    <div class="contact-card reveal delay-1">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Full Name" required>
+                                <input type="email" placeholder="Official Email" required>
+                                <textarea placeholder="How can we help?" rows="4" required></textarea>
                             </div>
-                            <div class="widget">
-                                <span class="widget-label">Fault Alerts</span>
-                                <span class="widget-value text-red">02</span>
-                            </div>
-                            <div class="widget">
-                                <span class="widget-label">Energy Consumed</span>
-                                <span class="widget-value">42.5 kWh</span>
-                            </div>
-                        </div>
-                        <div class="chart-area">
-                            <div id="chartImage"></div>
-                        </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Use Cases -->
-    <section class="use-cases section-padding">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="subtitle">Applications</span>
-                <h2>Versatile Solutions</h2>
-            </div>
-            <div class="use-case-grid">
-                <div class="use-case-item reveal">
-                    <div class="use-case-img" id="usecase1"></div>
-                    <div class="use-case-overlay">
-                        <h3>Highways</h3>
-                    </div>
-                </div>
-                <div class="use-case-item reveal delay-1">
-                    <div class="use-case-img" id="usecase2"></div>
-                    <div class="use-case-overlay">
-                        <h3>Smart Cities</h3>
-                    </div>
-                </div>
-                <div class="use-case-item reveal delay-2">
-                    <div class="use-case-img" id="usecase3"></div>
-                    <div class="use-case-overlay">
-                        <h3>Campuses</h3>
-                    </div>
-                </div>
-                <div class="use-case-item reveal delay-3">
-                    <div class="use-case-img" id="usecase4"></div>
-                    <div class="use-case-overlay">
-                        <h3>Industrial Zones</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Achievements/Milestones -->
-    <section class="achievements section-padding" id="success">
-        <div class="container">
-            <div class="achievements-wrapper">
-                <div class="achievement-content reveal">
-                    <span class="subtitle">Our Success</span>
-                    <h2>National Recognition</h2>
-                    <p>Our smart lighting solution has been recognized at multiple national-level innovation platforms.</p>
-                    
-                    <div class="milestone-card">
-                        <div class="milestone-icon"><i data-lucide="award"></i></div>
-                        <div class="milestone-text">
-                            <h3>Top 20 Finalist</h3>
-                            <p>AICTE Innovators Hackathon. Ranked among the top 20 teams nationally out of 2000+ competitors.</p>
-                        </div>
-                    </div>
-
-                    <div class="milestone-card">
-                        <div class="milestone-icon"><i data-lucide="trophy"></i></div>
-                        <div class="milestone-text">
-                            <h3>National Finalist</h3>
-                            <p>Global Challenges Competition at GITAM University. Selected as a national-level finalist for smart city solutions.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="achievement-visual reveal delay-1">
-                    <div class="visual-stack">
-                        <div class="visual-frame">
-                            <img src="assets/hackathon.jpg" alt="AICTE Hackathon Showcase">
-                        </div>
-                        <div class="visual-frame small-frame">
-                            <img src="assets/gitam.jpg" alt="GITAM University National Finalist Team">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- CTA Section -->
-    <section class="cta section-padding">
-        <div class="container">
-            <div class="cta-card reveal">
-                <h2>Ready to illuminate your city?</h2>
-                <p>Join the future of smart urban infrastructure with our LoRa-enabled solutions.</p>
-                <div class="cta-btns">
-                    <a href="#contact" class="btn btn-primary">Book a Demo</a>
-                    <a href="#contact" class="btn btn-outline">Get a Quote</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact section-padding" id="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info reveal">
-                    <h2>Get in Touch</h2>
-                    <p>Have questions about implementation or pricing? Our team is here to help.</p>
-                    <div class="info-items">
-                        <div class="info-item">
-                            <i data-lucide="mail"></i>
-                            <span>contact@mubgm.in</span>
-                        </div>
-                        <div class="info-item">
-                            <i data-lucide="phone"></i>
-                            <span>+91 81482 32205</span>
-                        </div>
-                        <div class="info-item">
-                            <i data-lucide="map-pin"></i>
-                            <span>3/2, 2(B), Nesavalar Colony, P.N Road, Tiruppur — 641602, Tamil Nadu, India</span>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form reveal delay-2">
-                    <div class="form-group">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Business Email</label>
-                        <input type="email" placeholder="john@company.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea placeholder="Tell us about your project..." rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Send Inquiry</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <span class="logo-icon"></span>
-                        <span class="logo-text">FLUXORA<span>TECH</span></span>
-                    </a>
-                    <p>Fluxora Technology — A registered MSME micro enterprise (UDYAM-TN-28-0190560) dedicated to sustainable, smart infrastructure.</p>
-                    <p class="small-text">NIC 27400: Manufacture of Electric Lighting Equipment<br>Incorporated: November 2025</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Product</h4>
-                    <a href="#about">About</a>
-                    <a href="#features">Features</a>
-                    <a href="#dashboard">Dashboard</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-social">
-                    <h4>Connect</h4>
-                    <div class="social-icons">
-                        <a href="#"><i data-lucide="linkedin"></i></a>
-                        <a href="#"><i data-lucide="twitter"></i></a>
-                        <a href="#"><i data-lucide="github"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Fluxora Technology. All rights reserved.</p>
-            </div>
+    <footer class="section-padding" style="background: #000; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container" style="text-align: center;">
+            <div class="logo-text" style="margin-bottom: 2rem;">FLUXORA<span>TECH</span></div>
+            <p style="color: var(--text-muted);">© 2025 Fluxora Technology. MSME: UDYAM-TN-28-0190560</p>
+            <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 1rem;">Manufacture of Electric Lighting Equipment (NIC 27400)</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-    </script>
 </body>
 </html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart LoRa Street Light System | Future of Smart City Infrastructure</title>
+    <meta name="description" content="Energy-efficient, IoT-enabled street lights with real-time monitoring. LoRa-based smart street lighting solution for municipalities and smart cities.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon"></span>
+                <span class="logo-text">FLUXORA<span>TECH</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#contact" class="btn btn-primary">Request Demo</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <span class="badge">Next-Gen IoT Solution</span>
+                <h1>Smart Street Lighting <br><span class="gradient-text">for the Future</span></h1>
+                <p>Fully automated, sensor-driven street lights with real-time monitoring. No manual switching needed — our system adapts to the environment instantly.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Request Demo</a>
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal delay-1">
+                <div class="visual-card">
+                    <div id="heroImage">
+                        <span class="img-badge">Prototype v1.0</span>
+                    </div>
+                    <div class="glowing-orb"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">System Overview</span>
+                <h2>Intelligent Infrastructure</h2>
+                <p>Developed and tested by <strong>Fluxora Technology</strong> in Tiruppur, Tamil Nadu. Our system leverages STM32-based intelligence and long-range connectivity to create a responsive, energy-saving lighting network.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card reveal delay-1">
+                    <div class="icon-box"><i data-lucide="zap"></i></div>
+                    <h3>Motion Intelligence</h3>
+                    <p>Ultrasonic sensors detect movement, automatically dimming or brightening lights based on real-time traffic.</p>
+                </div>
+                <div class="about-card reveal delay-2">
+                    <div class="icon-box"><i data-lucide="radio"></i></div>
+                    <h3>LoRa Connectivity</h3>
+                    <p>Long-range, low-power communication ensures seamless data transfer across entire city districts.</p>
+                </div>
+                <div class="about-card reveal delay-3">
+                    <div class="icon-box"><i data-lucide="sun"></i></div>
+                    <h3>BH1750 Lux Sensor</h3>
+                    <p>Precise light intensity detection ensures lights only activate when natural light falls below required levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Hardware -->
+    <section class="hardware section-padding bg-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">Hardware Stack</span>
+                <h2>Core Components</h2>
+                <p>Built on industrial-grade hardware for maximum reliability and performance.</p>
+            </div>
+            <div class="hardware-grid">
+                <div class="hw-item reveal">
+                    <i data-lucide="cpu"></i>
+                    <h4>STM32 Controller</h4>
+                    <span>Central processing unit for real-time edge computing.</span>
+                </div>
+                <div class="hw-item reveal delay-1">
+                    <i data-lucide="radio-tower"></i>
+                    <h4>LoRa Module</h4>
+                    <span>Long-range RF communication for city-scale deployment.</span>
+                </div>
+                <div class="hw-item reveal delay-2">
+                    <i data-lucide="radar"></i>
+                    <h4>Ultrasonic Sensor</h4>
+                    <span>Detects movement for automatic brightness adjustment.</span>
+                </div>
+                <div class="hw-item reveal delay-3">
+                    <i data-lucide="monitor"></i>
+                    <h4>I²C LCD Display</h4>
+                    <span>Local monitoring of system status and sensor readings.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features section-padding" id="features">
+        <div class="container">
+            <div class="features-wrapper">
+                <div class="features-content reveal">
+                    <span class="subtitle">Why Choose Us</span>
+                    <h2>Key Features & Benefits</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <i data-lucide="check-circle" class="text-green"></i>
+                            <span><strong>Energy Saving:</strong> Reduce power consumption by 60–80%.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle" class="text-green"></i>
+                            <span><strong>Remote Monitoring:</strong> Full control via a central cloud dashboard.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle" class="text-green"></i>
+                            <span><strong>Scalable Architecture:</strong> Designed to grow with your smart city.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle" class="text-green"></i>
+                            <span><strong>Autonomous Operation:</strong> Automatic on/off and dimming based on ambient conditions.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="features-visual reveal delay-2">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-number">80%</span>
+                            <span class="stat-label">Energy Saved</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">10km</span>
+                            <span class="stat-label">LoRa Range</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="workflow section-padding" id="how-it-works">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">The Process</span>
+                <h2>How It Works</h2>
+            </div>
+            <div class="flow-steps">
+                <div class="step reveal">
+                    <div class="step-num">01</div>
+                    <div class="step-content">
+                        <h3>Detection</h3>
+                        <p>Sensors detect pedestrian or vehicular movement in the vicinity.</p>
+                    </div>
+                </div>
+                <div class="step-arrow reveal"></div>
+                <div class="step reveal delay-1">
+                    <div class="step-num">02</div>
+                    <div class="step-content">
+                        <h3>Activation</h3>
+                        <p>Light intensity increases instantly to ensure maximum safety.</p>
+                    </div>
+                </div>
+                <div class="step-arrow reveal"></div>
+                <div class="step reveal delay-2">
+                    <div class="step-num">03</div>
+                    <div class="step-content">
+                        <h3>Transmission</h3>
+                        <p>Usage data and health status sent to gateway via LoRa.</p>
+                    </div>
+                </div>
+                <div class="step-arrow reveal"></div>
+                <div class="step reveal delay-3">
+                    <div class="step-num">04</div>
+                    <div class="step-content">
+                        <h3>Control</h3>
+                        <p>Central system logs data and alerts maintenance if needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="dashboard section-padding" id="dashboard">
+        <div class="container">
+            <div class="dashboard-container reveal">
+                <div class="dashboard-header">
+                    <h3>Live Network Overview</h3>
+                    <div class="status-indicator">
+                        <span class="pulse"></span> System Active
+                    </div>
+                </div>
+                <div class="dashboard-mock">
+                    <div class="sidebar"></div>
+                    <div class="main-content">
+                        <div class="widgets">
+                            <div class="widget">
+                                <span class="widget-label">Active Units</span>
+                                <span class="widget-value">1,248</span>
+                            </div>
+                            <div class="widget">
+                                <span class="widget-label">Fault Alerts</span>
+                                <span class="widget-value text-red">02</span>
+                            </div>
+                            <div class="widget">
+                                <span class="widget-label">Energy Consumed</span>
+                                <span class="widget-value">42.5 kWh</span>
+                            </div>
+                        </div>
+                        <div class="chart-area">
+                            <div id="chartImage"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">Applications</span>
+                <h2>Versatile Solutions</h2>
+            </div>
+            <div class="use-case-grid">
+                <div class="use-case-item reveal">
+                    <div class="use-case-img" id="usecase1"></div>
+                    <div class="use-case-overlay">
+                        <h3>Highways</h3>
+                    </div>
+                </div>
+                <div class="use-case-item reveal delay-1">
+                    <div class="use-case-img" id="usecase2"></div>
+                    <div class="use-case-overlay">
+                        <h3>Smart Cities</h3>
+                    </div>
+                </div>
+                <div class="use-case-item reveal delay-2">
+                    <div class="use-case-img" id="usecase3"></div>
+                    <div class="use-case-overlay">
+                        <h3>Campuses</h3>
+                    </div>
+                </div>
+                <div class="use-case-item reveal delay-3">
+                    <div class="use-case-img" id="usecase4"></div>
+                    <div class="use-case-overlay">
+                        <h3>Industrial Zones</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (Optional) -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">Success Stories</span>
+                <h2>Trusted by Municipalities</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal">
+                    <div class="quote-icon">"</div>
+                    <p>The Fluxora system reduced our city's energy bill by 75% in the first quarter. The maintenance alerts are a game changer.</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <strong>Robert Chen</strong>
+                            <span>City Planner, Metroville</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal delay-1">
+                    <div class="quote-icon">"</div>
+                    <p>Implementation was seamless. The LoRa connectivity is robust even in high-density urban areas. Highly recommended.</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <strong>Sarah Jenkins</strong>
+                            <span>CTO, Urban Tech Corp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section-padding">
+        <div class="container">
+            <div class="cta-card reveal">
+                <h2>Ready to illuminate your city?</h2>
+                <p>Join the future of smart urban infrastructure with our LoRa-enabled solutions.</p>
+                <div class="cta-btns">
+                    <a href="#contact" class="btn btn-primary">Book a Demo</a>
+                    <a href="#contact" class="btn btn-outline">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about implementation or pricing? Our team is here to help.</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <i data-lucide="mail"></i>
+                            <span>contact@mubgm.in</span>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="phone"></i>
+                            <span>+91 81482 32205</span>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>3/2, 2(B), Nesavalar Colony, P.N Road, Tiruppur — 641602, Tamil Nadu, India</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal delay-2">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Business Email</label>
+                        <input type="email" placeholder="john@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Tell us about your project..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon"></span>
+                        <span class="logo-text">FLUXORA<span>TECH</span></span>
+                    </a>
+                    <p>Fluxora Technology — A registered MSME micro enterprise (UDYAM-TN-28-0190560) dedicated to sustainable, smart infrastructure.</p>
+                    <p class="small-text">NIC 27400: Manufacture of Electric Lighting Equipment<br>Incorporated: November 2025</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#about">About</a>
+                    <a href="#features">Features</a>
+                    <a href="#dashboard">Dashboard</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#"><i data-lucide="linkedin"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fluxora Technology. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

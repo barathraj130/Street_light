@@ -1,0 +1,17 @@
+{
+  "name": "smart-street-light-system",
+  "version": "1.0.0",
+  "description": "Modern landing page for a smart LoRa street lighting startup.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "iot",
+    "smart-city",
+    "lora",
+    "lighting"
+  ],
+  "author": "Antigravity",
+  "license": "MIT"
+}

@@ -190,11 +190,11 @@
                         </div>
                     </div>
                     <div class="contact-card reveal delay-1">
-                        <form id="contactForm">
+                        <form action="https://formspree.io/f/xvgzbgww" method="POST" id="contactForm">
                             <div class="form-group">
-                                <input type="text" placeholder="Full Name" required>
-                                <input type="email" placeholder="Official Email" required>
-                                <textarea placeholder="How can we help?" rows="4" required></textarea>
+                                <input type="text" name="name" placeholder="Full Name" required>
+                                <input type="email" name="email" placeholder="Official Email" required>
+                                <textarea name="message" placeholder="How can we help?" rows="4" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
                         </form>

@@ -230,7 +230,7 @@ h1, h2, h3, h4, .logo-text {
     border-radius: 24px;
     overflow: hidden;
     height: 520px;
-    background: url('https://images.unsplash.com/photo-1492138786289-d35ea6323ef4?auto=format&fit=crop&q=80&w=1200');
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1492138786289-d35ea6323ef4?auto=format&fit=crop&q=80&w=1200');
     background-size: cover;
     background-position: center;
 }
@@ -239,14 +239,15 @@ h1, h2, h3, h4, .logo-text {
     position: absolute;
     top: 2rem;
     right: 2rem;
-    background: var(--grad-primary);
+    background: var(--primary);
     color: #fff;
-    padding: 0.5rem 1.2rem;
+    padding: 0.6rem 1.4rem;
     border-radius: 50px;
-    font-weight: 700;
-    font-size: 0.75rem;
+    font-weight: 800;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    box-shadow: 0 10px 20px rgba(0, 102, 255, 0.2);
 }
 
 /* --- Content Sections --- */
@@ -261,12 +262,13 @@ h1, h2, h3, h4, .logo-text {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
 }
 
 .section-header h2 {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
+    line-height: 1.1;
     font-weight: 900;
 }
 
@@ -274,50 +276,50 @@ h1, h2, h3, h4, .logo-text {
 .about-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .about-card {
     background: #fff;
     border: 1px solid #e2e8f0;
-    padding: 3.5rem 2.5rem;
+    padding: 4rem 3rem;
     border-radius: 32px;
     transition: var(--transition);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .about-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 30px 60px rgba(0, 102, 255, 0.1);
 }
 
 .icon-box {
     width: 70px;
     height: 70px;
-    background: rgba(0, 102, 255, 0.05);
+    background: rgba(0, 102, 255, 0.08);
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     color: var(--primary);
 }
 
 .about-card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
 }
 
 .about-card p {
     color: var(--text-dim);
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 /* Achievements */
 .achievements-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
     gap: 6rem;
     align-items: center;
 }
@@ -325,25 +327,27 @@ h1, h2, h3, h4, .logo-text {
 .milestone-card {
     background: #fff;
     border: 1px solid #e2e8f0;
-    padding: 2.5rem;
-    border-radius: 24px;
-    margin-bottom: 1.5rem;
+    padding: 3rem;
+    border-radius: 32px;
+    margin-bottom: 2rem;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
 }
 
 .milestone-card:hover {
     border-color: var(--primary);
-    transform: translateX(8px);
+    transform: translateX(10px);
+    box-shadow: 0 20px 40px rgba(0, 102, 255, 0.05);
 }
 
 .milestone-icon {
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
     background: var(--grad-primary);
     color: #fff;
-    border-radius: 16px;
+    border-radius: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -351,9 +355,53 @@ h1, h2, h3, h4, .logo-text {
 }
 
 .milestone-text h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.3rem;
-    color: var(--primary);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-black);
+}
+
+.visual-stack {
+    position: relative;
+    height: 650px;
+}
+
+.visual-frame {
+    border-radius: 32px;
+    overflow: hidden;
+    border: 12px solid #fff;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.12);
+    transition: var(--transition);
+    background: #fff;
+}
+
+.visual-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.main-frame {
+    width: 85%;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.small-frame {
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.visual-frame:hover {
+    z-index: 10;
+    transform: scale(1.03) translateY(-10px);
 }
 
 /* Video Showcase */

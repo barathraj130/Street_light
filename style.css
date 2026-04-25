@@ -592,6 +592,27 @@ h1, h2, h3, h4, .logo-text {
     .hero h1 { font-size: 3rem; }
 }
 
+/* Video Showcase */
+.video-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.video-frame {
+    background: var(--bg-accent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 40px;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: relative;
+}
+
+.video-frame iframe {
+    border-radius: 24px;
+    display: block;
+}
+
 #chartImage {
     height: 300px;
     margin-top: 4rem;
